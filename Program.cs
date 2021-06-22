@@ -126,6 +126,23 @@ namespace UF2216
 
             con.WriteLine($"El mes {mes} tiene {dias} días");
 
+            // C# 7.0
+
+            switch(mes) {
+                case int m when m < 1 || m > 12:
+                    dias = 0;
+                    break;
+                case int m when new List<int>{4,6,9,11}.Contains(m):
+                    dias = 30;
+                    break;
+                default:
+                    dias = 31;
+                    break;
+            }
+
+            con.WriteLine($"El mes {mes} tiene {dias} días");
+
+
             // REPETITIVAS
 
             int contador = 0;
@@ -207,7 +224,7 @@ namespace UF2216
             //     con.WriteLine(str);
             // }
 
-            con.WriteLine("Fin ejemplos estructuras de control");
+            con.WriteLine("Fin ejemplos estructuras de control.");
         }
     }
 }
