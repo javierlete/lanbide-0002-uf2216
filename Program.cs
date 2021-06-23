@@ -10,7 +10,7 @@ namespace UF2216
     class Program
     {
         /// Comentario de documentación
-        static void Main(string[] args)
+        static void Mainn(string[] args)
         {
             // https://docs.microsoft.com/es-es/dotnet/csharp/
 
