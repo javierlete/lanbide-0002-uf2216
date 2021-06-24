@@ -5,7 +5,7 @@ namespace POO.Presentacion
 {
     class PersonaPrueba
     {
-        static void Main()
+        static void Mainn()
         {
             Persona persona;
 
@@ -37,6 +37,11 @@ namespace POO.Presentacion
             var persona5 = new Persona(nombre: "Sólo nombre");
 
             Console.WriteLine(persona5.ATexto());
+
+            persona5.Id++;
+            //persona5.setId(persona5.getId() + 1);
+
+            Console.WriteLine(persona5.Texto);
         }
     }
 }

@@ -12,6 +12,7 @@ namespace POO.Entidades
             Id = id; Nombre = nombre;
         }
 
+        public Persona(Persona persona): this(persona.Id, persona.Nombre) {}
         //public Persona(): this(0, "DESCONOCIDO") {}
         public string Nombre
         {
@@ -38,6 +39,10 @@ namespace POO.Entidades
 
         public string ATexto() {
             return $"{Id}: {Nombre}";
+        }
+
+        public string Texto {
+            get { return ATexto(); }
         }
     }
 }
