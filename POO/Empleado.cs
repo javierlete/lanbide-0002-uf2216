@@ -14,5 +14,11 @@ namespace POO.Entidades
 
         // public Empleado() : base() {}
         public string Dni { get; set; }
+
+        // public new string ATexto()
+        public override string ATexto()
+        {
+            return base.ATexto() + "," + Dni;
+        }
     }
 }

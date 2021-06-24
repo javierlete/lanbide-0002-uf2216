@@ -5,7 +5,7 @@ namespace POO.Presentacion
 {
     class EmpleadoPrueba
     {
-        static void Main()
+        static void Mainn()
         {
             var empleado = new Empleado(2, "Javier", "12345678Z");
 
@@ -15,12 +15,12 @@ namespace POO.Presentacion
             empleado.Dni = "12345678G";
 
             Console.WriteLine(empleado.ATexto());
-            Console.WriteLine(empleado.Dni);
+            //Console.WriteLine(empleado.Dni);
 
             var empleado2 = new Empleado(new Persona(), "87654321A");
 
-            Console.WriteLine(empleado2.ATexto());
-            Console.WriteLine(empleado2.Dni);
+            Console.WriteLine(empleado2.Texto);
+            //Console.WriteLine(empleado2.Dni);
 
         }
     }

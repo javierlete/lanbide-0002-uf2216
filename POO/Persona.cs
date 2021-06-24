@@ -37,7 +37,8 @@ namespace POO.Entidades
         //     set { id = value; }
         // }
 
-        public string ATexto() {
+        // public string ATexto() {
+        public virtual string ATexto() {
             return $"{Id}: {Nombre}";
         }
 
