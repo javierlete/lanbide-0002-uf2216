@@ -12,6 +12,8 @@ namespace POO.Entidades
         
         public Empleado(Persona persona, string dni): this(persona.Id, persona.Nombre, dni) {}
 
+        public Empleado(Empleado empleado): this(empleado.Id, empleado.Nombre, empleado.Dni) {}
+
         // public Empleado() : base() {}
         public string Dni { get; set; }
 
