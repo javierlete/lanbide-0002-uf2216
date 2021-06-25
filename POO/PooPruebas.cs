@@ -7,7 +7,7 @@ namespace POO.Presentacion
 {
     class PooPruebas
     {
-        static void Mainn()
+        static void Main()
         {
             var p1 = new Persona();
             var p2 = new Persona(p1);
@@ -52,6 +52,7 @@ namespace POO.Presentacion
             Empleado e4 = p1 as Empleado;
 
             Console.WriteLine(e4 == null);
+            Console.WriteLine(null == e4);
 
             foreach(PropertyInfo prop in e2.GetType().GetProperties() ) {//typeof(Empleado).GetProperties()) {
                 Console.WriteLine(prop);

@@ -66,7 +66,7 @@ namespace POO.Entidades
             
             Persona p = obj as Persona;
             
-            if((object)p == null) {
+            if(p is null) {
                 return false;
             }
 
@@ -79,6 +79,8 @@ namespace POO.Entidades
         }
 
         public static bool operator==(Persona p1, Persona p2) {
+            if(p1 is null && p2 is null) { return true; }
+            if(p1 is null) { return false; }
             return p1.Equals(p2);
         }
 

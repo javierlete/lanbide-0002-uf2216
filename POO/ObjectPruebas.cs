@@ -6,7 +6,7 @@ namespace POO.Presentacion
 {
     class ObjectPruebas
     {
-        static void Main()
+        static void Mainn()
         {
             object o = new object();
             object o2 = new object();

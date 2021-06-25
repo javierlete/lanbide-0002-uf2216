@@ -42,6 +42,13 @@ namespace POO.Presentacion
             //persona5.setId(persona5.getId() + 1);
 
             Console.WriteLine(persona5.Texto);
+
+            var persona6 = new Persona(persona5);
+
+            persona6.Id = 24;
+
+            Console.WriteLine(persona5);
+            Console.WriteLine(persona6);
         }
     }
 }
