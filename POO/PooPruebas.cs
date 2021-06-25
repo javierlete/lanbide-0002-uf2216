@@ -7,7 +7,7 @@ namespace POO.Presentacion
 {
     class PooPruebas
     {
-        static void Main()
+        static void Mainn()
         {
             var p1 = new Persona();
             var p2 = new Persona(p1);
