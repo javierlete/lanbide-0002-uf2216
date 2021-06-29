@@ -12,10 +12,10 @@ namespace POO.Entidades {
 
         public void Agregar(Persona persona) {
             if(persona == null) {
-                throw new System.Exception("No se aceptan nulos");
+                throw new EntidadesException("No se aceptan nulos");
             }
             if(persona.Nombre.ToUpper() == "DESCONOCIDO") {
-                throw new System.Exception("No se admiten desconocidos");
+                throw new EntidadesException("No se admiten desconocidos");
             }
             personas.Add(persona);
         }

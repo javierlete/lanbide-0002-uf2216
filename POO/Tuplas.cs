@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 class Tuplas {
-    static void Main() {
+    static void Mainn() {
         var t = (Clave: "casa", Valor: "home");
 
         Console.WriteLine(t);

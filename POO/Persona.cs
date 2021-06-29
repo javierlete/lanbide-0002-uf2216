@@ -30,10 +30,10 @@ namespace POO.Entidades
             set
             {
                 if(value == null) {
-                    throw new Exception("No se admiten valores nulos para el nombre");
+                    throw new EntidadesException("No se admiten valores nulos para el nombre");
                 }
                 if(value.Trim().Length == 0) {
-                    throw new Exception("No se admiten nombres vacíos");
+                    throw new EntidadesException("No se admiten nombres vacíos");
                 }
                 nombre = value.Trim();
             }
