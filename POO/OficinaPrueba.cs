@@ -4,7 +4,7 @@ using con=System.Console;
 namespace POO.Presentacion
 {
     class OficinaPrueba {
-        static void Mainn() {
+        static void Main() {
             var oficina = new Oficina("Bilbao");
 
             oficina.Agregar(new Persona(nombre: "Pepito"));

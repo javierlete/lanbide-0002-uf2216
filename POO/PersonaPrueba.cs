@@ -5,7 +5,7 @@ namespace POO.Presentacion
 {
     class PersonaPrueba
     {
-        static void Mainn()
+        static void Main()
         {
             Persona persona;
 

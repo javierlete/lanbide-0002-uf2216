@@ -6,7 +6,7 @@ namespace POO.Presentacion
 {
     class Excepciones
     {
-        static void Mainn()
+        static void Main()
         {
             int a = 5, b = 0, div;
 
@@ -25,12 +25,12 @@ namespace POO.Presentacion
                 do
                 {
                     con.Write("Introduce el nombre: ");
-                    
+
                     try
                     {
                         int[] arr = new int[2];
 
-                        //arr[2] = 10;
+                        // arr[2] = 10;
 
                         p.Nombre = con.ReadLine();
                         con.WriteLine(p);

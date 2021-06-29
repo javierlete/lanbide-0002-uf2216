@@ -7,7 +7,7 @@ namespace POO.Presentacion
 {
     class PooPruebas
     {
-        static void Mainn()
+        static void Main()
         {
             var p1 = new Persona();
             var p2 = new Persona(p1);
@@ -51,7 +51,8 @@ namespace POO.Presentacion
 
             Empleado e4 = p1 as Empleado;
 
-            e4 ??= new EmpleadoIndefinido(1, "POR DEFECTO", "00000", 34567, 14);
+            // e4 ??= new EmpleadoIndefinido(1, "POR DEFECTO", "00000", 34567, 14);
+            e4 = e4 ?? new EmpleadoIndefinido(1, "POR DEFECTO", "00000", 34567, 14);
 
             Console.WriteLine(e4 == null);
             Console.WriteLine(null == e4);

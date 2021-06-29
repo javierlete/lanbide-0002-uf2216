@@ -20,6 +20,8 @@ namespace POO.Entidades
 
         public abstract decimal SueldoMensual { get; }
 
+        // public abstract decimal GetSueldoMensual();
+
         // public new string ATexto()
         public override string ATexto()
         {

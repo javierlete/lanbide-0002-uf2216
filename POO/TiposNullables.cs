@@ -21,7 +21,7 @@ namespace POO.Presentacion {
             }
 
             System.Console.WriteLine(d?.Month);
-            System.Console.WriteLine(d.HasValue ? d?.Month : "No hay mes");
+            System.Console.WriteLine(d.HasValue ? d?.Month.ToString() : "No hay mes");
         }
     }
 }

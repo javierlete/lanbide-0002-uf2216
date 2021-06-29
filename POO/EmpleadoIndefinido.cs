@@ -11,6 +11,10 @@ namespace POO.Entidades
         //     get { return SueldoAnual / NumeroPagas; }
         // }
 
+        // public override decimal GetSueldoMensual() {
+        //     return SueldoAnual / NumeroPagas;
+        // }
+
         public EmpleadoIndefinido(long id, string nombre, string dni, decimal sueldoAnual, int numeroPagas) : base(id, nombre, dni)
         {
             SueldoAnual = sueldoAnual;
