@@ -5,7 +5,7 @@ namespace POO.Presentacion
 {
     class EmpleadoPrueba
     {
-        static void Main()
+        static void Mainn()
         {
             var empleado = new EmpleadoIndefinido(2, "Javier", "12345678Z", 23456m, 14);
 
