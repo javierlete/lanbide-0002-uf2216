@@ -6,7 +6,7 @@ namespace POO.Presentacion
 {
     class Excepciones
     {
-        static void Main()
+        static void Mainn()
         {
             int a = 5, b = 0, div;
 

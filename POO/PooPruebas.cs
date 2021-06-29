@@ -32,7 +32,7 @@ namespace POO.Presentacion
                 Console.WriteLine(p.Texto);
             }
 
-            var e1 = new Empleado(7, "Javier Lete", "12345678Z");
+            var e1 = new EmpleadoIndefinido(7, "Javier Lete", "12345678Z", 23456, 14);
 
             Persona pe1 = e1;
 
@@ -51,7 +51,7 @@ namespace POO.Presentacion
 
             Empleado e4 = p1 as Empleado;
 
-            e4 ??= new Empleado(1, "POR DEFECTO", "00000");
+            e4 ??= new EmpleadoIndefinido(1, "POR DEFECTO", "00000", 34567, 14);
 
             Console.WriteLine(e4 == null);
             Console.WriteLine(null == e4);
@@ -60,7 +60,7 @@ namespace POO.Presentacion
                 Console.WriteLine(prop);
             }
 
-            oficina.Agregar(new Empleado(10, "Pepe", "12341234Z"));
+            oficina.Agregar(new EmpleadoIndefinido(10, "Pepe", "12341234Z", 45678, 12));
 
             foreach (Persona p in oficina.Personas)
             {
