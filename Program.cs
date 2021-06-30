@@ -5,12 +5,15 @@ using System;
 using System.Collections.Generic;
 using con = System.Console;
 
+#pragma warning disable CS0162
 namespace UF2216
 {
-    class Program
+    public static class Program
     {
+        /// <summary>
         /// Comentario de documentación
-        static void Mainn(string[] args)
+        /// </summary>
+        public static void Main()
         {
             // https://docs.microsoft.com/es-es/dotnet/csharp/
 
@@ -52,8 +55,8 @@ namespace UF2216
             // C#6
             con.WriteLine($"Hola {nombre}, qué tal estás.");
 
-            string s1 = "Texto";
-            string s2 = "Texto";
+            const string s1 = "Texto";
+            const string s2 = "Texto";
 
             con.WriteLine(s1 == s2);
 
@@ -63,7 +66,7 @@ namespace UF2216
             // SENTENCIAS DE CONTROL
             // https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/statement-keywords
 
-            bool estaEncendido = false;
+            const bool estaEncendido = false;
 
             if (estaEncendido)
             {
@@ -77,7 +80,7 @@ namespace UF2216
 
             con.WriteLine(estaEncendido);
 
-            string opcion = "segunda";
+            const string opcion = "segunda";
 
             if (opcion == "primera")
             {
@@ -141,7 +144,6 @@ namespace UF2216
             }
 
             con.WriteLine($"El mes {mes} tiene {dias} días");
-
 
             // REPETITIVAS
 
@@ -228,3 +230,4 @@ namespace UF2216
         }
     }
 }
+#pragma warning restore CS0162

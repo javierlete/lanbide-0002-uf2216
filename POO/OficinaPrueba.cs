@@ -3,8 +3,8 @@ using con=System.Console;
 
 namespace POO.Presentacion
 {
-    class OficinaPrueba {
-        static void Main() {
+    public static class OficinaPrueba {
+        public static void Main() {
             var oficina = new Oficina("Bilbao");
 
             oficina.Agregar(new Persona(nombre: "Pepito"));

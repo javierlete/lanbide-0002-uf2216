@@ -3,9 +3,9 @@ using POO.Entidades;
 
 namespace POO.Presentacion
 {
-    class EmpleadoPrueba
+    public static class EmpleadoPrueba
     {
-        static void Main()
+        public static void Main()
         {
             var empleado = new EmpleadoIndefinido(2, "Javier", "12345678Z", 23456m, 14);
 

@@ -1,13 +1,22 @@
 using System.Collections.Generic;
 using System;
-class Tuplas {
-    static void Main() {
-        var t = (Clave: "casa", Valor: "home");
 
-        Console.WriteLine(t);
+namespace POO.Presentacion
+{
+    public static class Tuplas
+    {
+        public static void Main()
+        {
+            var t = (Clave: "casa", Valor: "home");
 
-        var dic = new Dictionary<string, string>();
+            Console.WriteLine(t);
 
-        dic.Add(t.Clave, t.Valor);
+            var dic = new Dictionary<string, string>
+            {
+                { t.Clave, t.Valor }
+            };
+
+            Console.WriteLine(dic);
+        }
     }
 }

@@ -4,9 +4,9 @@ using POO.Entidades;
 // POO.Presentacion.ObjectPruebas.Main()
 namespace POO.Presentacion
 {
-    class ObjectPruebas
+    public static class ObjectPruebas
     {
-        static void Main()
+        public static void Main()
         {
             object o = new object();
             object o2 = new object();
@@ -46,15 +46,12 @@ namespace POO.Presentacion
             Console.WriteLine(Persona.Contador);
 
             Console.WriteLine(Persona.CompararAlfabeticamente(p, p2));
-            
+
             p.Nombre = "A";
             Console.WriteLine(Persona.CompararAlfabeticamente(p, p2));
-            
+
             p.Nombre = "Z";
             Console.WriteLine(Persona.CompararAlfabeticamente(p, p2));
-
-
-
         }
     }
 }

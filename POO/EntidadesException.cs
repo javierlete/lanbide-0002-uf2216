@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace POO.Entidades
 {
     [Serializable]
-    class EntidadesException : Exception
+    public class EntidadesException : Exception
     {
         public EntidadesException()
         {

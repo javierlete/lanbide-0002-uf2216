@@ -1,8 +1,8 @@
 namespace POO.Entidades
 {
-    abstract class Empleado : Persona
+    public abstract class Empleado : Persona
     {
-        public Empleado(long id, string nombre, string dni) : base(id, nombre)
+        protected Empleado(long id, string nombre, string dni) : base(id, nombre)
         {
             Dni = dni;
         }
@@ -11,9 +11,9 @@ namespace POO.Entidades
         //     Dni = dni;
         // }
 
-        public Empleado(Persona persona, string dni) : this(persona.Id, persona.Nombre, dni) { }
+        protected Empleado(Persona persona, string dni) : this(persona.Id, persona.Nombre, dni) { }
 
-        public Empleado(Empleado empleado) : this(empleado.Id, empleado.Nombre, empleado.Dni) { }
+        protected Empleado(Empleado empleado) : this(empleado.Id, empleado.Nombre, empleado.Dni) { }
 
         // public Empleado() : base() {}
         public string Dni { get; set; }

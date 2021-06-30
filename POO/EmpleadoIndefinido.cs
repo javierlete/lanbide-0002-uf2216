@@ -1,6 +1,6 @@
 namespace POO.Entidades
 {
-    class EmpleadoIndefinido : Empleado
+    public class EmpleadoIndefinido : Empleado
     {
         public decimal SueldoAnual { get; set; }
         public int NumeroPagas { get; set; }

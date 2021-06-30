@@ -3,13 +3,11 @@ using POO.Entidades;
 
 namespace POO.Presentacion
 {
-    class PersonaPrueba
+    public static class PersonaPrueba
     {
-        static void Main()
+        public static void Main()
         {
-            Persona persona;
-
-            persona = new Persona(5, "    Javier Lete   ");
+            Persona persona = new Persona(5, "    Javier Lete   ");
 
             // persona.Id = 5;
             // persona.Nombre = "     Javier Lete  ";
@@ -43,9 +41,10 @@ namespace POO.Presentacion
 
             Console.WriteLine(persona5.Texto);
 
-            var persona6 = new Persona(persona5);
-
-            persona6.Id = 24;
+            var persona6 = new Persona(persona5)
+            {
+                Id = 24
+            };
 
             Console.WriteLine(persona5);
             Console.WriteLine(persona6);

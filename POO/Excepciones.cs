@@ -4,9 +4,9 @@ using con = System.Console;
 
 namespace POO.Presentacion
 {
-    class Excepciones
+    public static class Excepciones
     {
-        static void Main()
+        public static void Main()
         {
             int a = 5, b = 0, div;
 

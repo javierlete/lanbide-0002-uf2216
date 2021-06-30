@@ -1,5 +1,5 @@
 namespace POO.Entidades {
-    class EmpleadoPorHoras: Empleado {
+    public class EmpleadoPorHoras: Empleado {
         public decimal SueldoPorHora { get; set; }
         public int NumeroHorasMes { get; set; }
 

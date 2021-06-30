@@ -5,9 +5,9 @@ using POO.Entidades;
 
 namespace POO.Presentacion
 {
-    class PooPruebas
+    public static class PooPruebas
     {
-        static void Main()
+        public static void Main()
         {
             var p1 = new Persona();
             var p2 = new Persona(p1);
@@ -43,9 +43,8 @@ namespace POO.Presentacion
 
             Console.WriteLine(e2.Dni);
 
-            if (p1 is Empleado)
+            if (p1 is Empleado e3)
             {
-                Empleado e3 = (Empleado)p1;
                 Console.WriteLine(e3.Texto);
             }
 
@@ -55,7 +54,9 @@ namespace POO.Presentacion
             e4 = e4 ?? new EmpleadoIndefinido(1, "POR DEFECTO", "00000", 34567, 14);
 
             Console.WriteLine(e4 == null);
+            #pragma warning disable RCS1098
             Console.WriteLine(null == e4);
+            #pragma warning disable RCS1098
 
             foreach(PropertyInfo prop in e2.GetType().GetProperties() ) {//typeof(Empleado).GetProperties()) {
                 Console.WriteLine(prop);

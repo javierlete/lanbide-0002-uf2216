@@ -2,7 +2,7 @@ using System;
 
 namespace POO.Entidades
 {
-    class Persona
+    public class Persona
     {
         public static long Contador { get; private set; } = 0;
         // private static long contador = 0;
@@ -63,10 +63,9 @@ namespace POO.Entidades
             if((object)this == obj) {
                 return true;
             }
-            
-            Persona p = obj as Persona;
-            
-            if(p is null) {
+
+            if (!(obj is Persona p))
+            {
                 return false;
             }
 
