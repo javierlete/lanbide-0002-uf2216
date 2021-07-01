@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net48</TargetFramework>
-    <StartupObject>POO.Presentacion.Estructuras</StartupObject>
+    <StartupObject>POO.Presentacion.MetodosDeExtension</StartupObject>
   </PropertyGroup>
 
 </Project>
