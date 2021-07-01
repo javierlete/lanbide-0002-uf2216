@@ -4,7 +4,6 @@ namespace POO.Presentacion
 {
     public static class Enumeraciones
     {
-
         public enum Color { Rojo, Verde, Azul }
         public static void Main()
         {
