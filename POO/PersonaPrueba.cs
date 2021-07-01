@@ -48,6 +48,15 @@ namespace POO.Presentacion
 
             Console.WriteLine(persona5);
             Console.WriteLine(persona6);
+
+            var p1 = new Persona();
+
+            p1["id"] = 10L;
+            p1["nombre"] = "Indexado";
+
+            System.Console.WriteLine(p1);
+            System.Console.WriteLine(p1["id"]);
+            System.Console.WriteLine(p1["nombre"]);
         }
     }
 }

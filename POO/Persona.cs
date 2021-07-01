@@ -14,12 +14,32 @@ namespace POO.Entidades
         public long Id { get; set; }
         private string nombre;
 
-        public Persona(long id = -1, string nombre = "DESCONOCIDO") {
+        public object this[string campo]
+        {
+            get {
+                switch(campo) {
+                    case "id": return Id;
+                    case "nombre": return Nombre;
+                    default: throw new EntidadesException("No se ha encontrado el campo");
+                }
+             }
+
+             set {
+                 switch(campo) {
+                     case "id": Id = (long)value; break;
+                     case "nombre": Nombre = (string)value; break;
+                     default: throw new EntidadesException("No se ha encontrado el campo");
+                 }
+             }
+        }
+
+        public Persona(long id = -1, string nombre = "DESCONOCIDO")
+        {
             Contador++;
             Id = id; Nombre = nombre;
         }
 
-        public Persona(Persona persona): this(persona.Id, persona.Nombre) {}
+        public Persona(Persona persona) : this(persona.Id, persona.Nombre) { }
         //public Persona(): this(0, "DESCONOCIDO") {}
         public string Nombre
         {
@@ -29,10 +49,12 @@ namespace POO.Entidades
             }
             set
             {
-                if(value == null) {
+                if (value == null)
+                {
                     throw new EntidadesException("No se admiten valores nulos para el nombre");
                 }
-                if(value.Trim().Length == 0) {
+                if (value.Trim().Length == 0)
+                {
                     throw new EntidadesException("No se admiten nombres vacíos");
                 }
                 nombre = value.Trim();
@@ -45,11 +67,13 @@ namespace POO.Entidades
         // }
 
         // public string ATexto() {
-        public virtual string ATexto() {
+        public virtual string ATexto()
+        {
             return $"{Id}: {Nombre}";
         }
 
-        public string Texto {
+        public string Texto
+        {
             get { return ATexto(); }
         }
 
@@ -60,7 +84,8 @@ namespace POO.Entidades
 
         public override bool Equals(object obj)
         {
-            if((object)this == obj) {
+            if ((object)this == obj)
+            {
                 return true;
             }
 
@@ -77,17 +102,20 @@ namespace POO.Entidades
             return Id.GetHashCode() ^ Nombre.GetHashCode();
         }
 
-        public static bool operator==(Persona p1, Persona p2) {
-            if(p1 is null && p2 is null) { return true; }
-            if(p1 is null) { return false; }
+        public static bool operator ==(Persona p1, Persona p2)
+        {
+            if (p1 is null && p2 is null) { return true; }
+            if (p1 is null) { return false; }
             return p1.Equals(p2);
         }
 
-        public static bool operator!=(Persona p1, Persona p2) {
+        public static bool operator !=(Persona p1, Persona p2)
+        {
             return !p1.Equals(p2);
         }
 
-        public static int CompararAlfabeticamente(Persona p1, Persona p2) {
+        public static int CompararAlfabeticamente(Persona p1, Persona p2)
+        {
             return string.Compare(p1.Nombre, p2.Nombre); //p1.Nombre.CompareTo(p2.Nombre);
         }
     }

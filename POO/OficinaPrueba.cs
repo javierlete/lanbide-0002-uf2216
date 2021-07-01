@@ -13,6 +13,9 @@ namespace POO.Presentacion
             oficina.Agregar(new Persona(5, "Javier Lete"));
             //oficina.Agregar(null);
 
+            System.Console.WriteLine(oficina[2]);
+            System.Console.WriteLine(oficina["uan"]);
+
             foreach (var persona in oficina.Personas)
             {
                 con.WriteLine(persona.Texto);
