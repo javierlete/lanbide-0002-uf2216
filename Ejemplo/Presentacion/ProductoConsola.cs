@@ -16,7 +16,6 @@ namespace Ejemplo.Presentacion
             };
         public static void Main()
         {
-
             Opcion opcion;
 
             do
