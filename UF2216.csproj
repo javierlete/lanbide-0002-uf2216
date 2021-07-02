@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net48</TargetFramework>
-    <StartupObject>POO.Presentacion.Parametros</StartupObject>
+    <StartupObject>POO.Presentacion.ObjetosAnonimos</StartupObject>
   </PropertyGroup>
 
 </Project>
