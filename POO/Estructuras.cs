@@ -19,9 +19,9 @@ namespace POO.Presentacion
 {
     public static class Estructuras
     {
-        #pragma warning disable RCS1169,RCS1213,IDE0044,IDE0051
+        #pragma warning disable RCS1169,RCS1213,IDE0044,IDE0051,CS0169
         private static CPunto cp3;
-        #pragma warning restore RCS1169,RCS1213,IDE0044,IDE0051
+        #pragma warning restore RCS1169,RCS1213,IDE0044,IDE0051,CS0169
         private static SPunto sp3;
         public static void Main()
         {
